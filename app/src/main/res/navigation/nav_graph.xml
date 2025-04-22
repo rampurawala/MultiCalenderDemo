@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.app.multicalenderdemo.HomeFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HorizontalCalendarFragment"
+            app:destination="@id/horizontalCalendarFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_SingleCalendarFragment"
+            app:destination="@id/singleCalendarFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_MultipleCalendarFragment"
+            app:destination="@id/multipleCalendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/horizontalCalendarFragment"
+        android:name="com.app.multicalenderdemo.horizontal_calender.HorizontalCalendarFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_horizontal">
+
+    </fragment>
+    <fragment
+        android:id="@+id/singleCalendarFragment"
+        android:name="com.app.multicalenderdemo.SingleDateSelectorFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_single_selector">
+
+    </fragment>
+    <fragment
+        android:id="@+id/multipleCalendarFragment"
+        android:name="com.app.multicalenderdemo.MultipleDateSelectorFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_multiple_selector">
+
+    </fragment>
+</navigation>

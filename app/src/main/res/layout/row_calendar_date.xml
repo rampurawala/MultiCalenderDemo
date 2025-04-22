@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootBg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_calendar_date"
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/bg_circle_theme"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:id="@+id/eventAvailable"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_rounded_5_white"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintBottom_toBottomOf="@id/tv_calendar_date"
+            app:layout_constraintEnd_toEndOf="@id/tv_calendar_date"
+            app:layout_constraintStart_toStartOf="@id/tv_calendar_date" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
