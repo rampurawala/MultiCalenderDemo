@@ -10,6 +10,18 @@
 - ⚙️ Easy to integrate into any Android project  
 - 📱 Great for travel apps, event scheduling, or booking platforms  
 
+## 📸 Screenshots
+
+###  Horizontal week wise date list screen
+<img src="screenshots/horizontal_calendar.png" alt="Repo List Screen" width="300"/>
+
+### Single date selection calender screen
+<img src="screenshots/single_date_selection.png" alt="Detail Screen" width="300"/>
+
+### Multiple date selection calender screen
+<img src="screenshots/multiple_date_selection.png" alt="Detail Screen" width="300"/>
+
+
 ## 🛠️ Tech Stack
 
 - Language: Kotlin
