@@ -7,7 +7,9 @@ import java.util.Calendar
 import java.util.Locale
 
 const val LOCAL_DATE_TIME_FORMAT = "dd MMM yyyy, hh:mm aa"
-
+var DD_MM_YYYY = "dd/MM/yyyy"
+var YYYY_MM_DD = "yyyy-MM-dd"
+const val SERVER_DATE_FORMAT = "yyyy-MM-dd"
 fun getCurrentDateMillis(): Long {
     val cal = Calendar.getInstance()
     cal.set(Calendar.MINUTE, 0)
@@ -38,6 +40,14 @@ fun removePastDates(dates: ArrayList<CalendarDateModel>): ArrayList<CalendarDate
 fun formatCalendar(milisecond: Long=Calendar.getInstance().timeInMillis, dateTimeFormat: String?): String {
     val calendar = Calendar.getInstance()
     calendar.timeInMillis = milisecond
+    val simpleDateFormat =
+        SimpleDateFormat(dateTimeFormat, Locale.getDefault())
+    return simpleDateFormat.format(calendar.time)
+}
+fun formatCalendar(
+    calendar: Calendar,
+    dateTimeFormat: String?
+): String {
     val simpleDateFormat =
         SimpleDateFormat(dateTimeFormat, Locale.getDefault())
     return simpleDateFormat.format(calendar.time)

@@ -2,11 +2,12 @@
     <string name="app_name">MultiCalenderDemo</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
+    <string name="multiple_selection_fragment_label">Multiple date Selector Fragment</string>
+    <string name="single_selection_fragment_label">Single date Selection Fragment</string>
     <string name="horizontal_Calendar">Horizontal Calendar</string>
     <string name="single_date_selector">Single date Selector Calendar</string>
     <string name="multiple_date_selector">Multiple date Selector Calendar</string>
+    <string name="MultiCalendar">MultiCalendar</string>
     <string name="sun">sun</string>
     <string name="mon">Mon</string>
     <string name="tue">Tue</string>

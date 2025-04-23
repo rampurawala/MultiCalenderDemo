@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/HomeFragment"
         android:name="com.app.multicalenderdemo.HomeFragment"
-        android:label="@string/first_fragment_label"
+        android:label="@string/MultiCalendar"
         tools:layout="@layout/fragment_main">
 
         <action
@@ -24,21 +24,21 @@
     <fragment
         android:id="@+id/horizontalCalendarFragment"
         android:name="com.app.multicalenderdemo.horizontal_calender.HorizontalCalendarFragment"
-        android:label="@string/second_fragment_label"
+        android:label="@string/horizontal_Calendar"
         tools:layout="@layout/fragment_horizontal">
 
     </fragment>
     <fragment
         android:id="@+id/singleCalendarFragment"
         android:name="com.app.multicalenderdemo.SingleDateSelectorFragment"
-        android:label="@string/second_fragment_label"
+        android:label="@string/single_selection_fragment_label"
         tools:layout="@layout/fragment_single_selector">
 
     </fragment>
     <fragment
         android:id="@+id/multipleCalendarFragment"
         android:name="com.app.multicalenderdemo.MultipleDateSelectorFragment"
-        android:label="@string/second_fragment_label"
+        android:label="@string/multiple_selection_fragment_label"
         tools:layout="@layout/fragment_multiple_selector">
 
     </fragment>

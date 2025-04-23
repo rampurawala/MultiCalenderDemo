@@ -11,6 +11,27 @@
         android:layout_height="match_parent"
         android:padding="16dp">
 
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:abbreviationsBarColor="@color/cal_bg"
+            app:abbreviationsLabelsColor="@color/blue_700"
+            app:anotherMonthsDaysLabelsColor="@color/grey"
+            app:daysLabelsColor="?attr/colorOnSurface"
+            app:disabledDaysLabelsColor="@color/grey"
+            app:eventsEnabled="false"
+            app:headerColor="@color/cal_bg"
+            app:headerLabelColor="@color/blue_700"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:pagesColor="@color/cal_bg"
+            app:layout_constraintTop_toTopOf="parent"
+            app:selectionColor="@color/blue_700"
+            app:selectionLabelColor="?attr/colorOnPrimary"
+            app:todayLabelColor="?attr/colorOnSurface"
+            app:type="many_days_picker" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

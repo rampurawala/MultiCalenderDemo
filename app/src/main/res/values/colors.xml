@@ -6,4 +6,6 @@
     <color name="purple_800">#242F80</color>
     <color name="blue_700">#531DCA</color>
     <color name="transparent">#00FFFFFF</color>
+    <color name="grey">#949494</color>
+    <color name="cal_bg">#F0F1F5</color>
 </resources>
